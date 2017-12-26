@@ -1,4 +1,3 @@
-//Based upon cs349-code/blob/master/x/displaylist.cpp
 //Created by Anton Danewid
 #include <unistd.h>
 #include <cstdlib>
@@ -25,7 +24,6 @@ unsigned long lastRepaint = 0;
 
 
 
-//Theese help-classes are inspired and taken from //Taken from cs349-code/blob/master/x/displaylist.cpp
 
 struct XInfo {
 	Display*  display;
@@ -427,7 +425,6 @@ void animate(Circle* c, XInfo& xinfo, list<Displayable*> dList) {
 
 }
 
-//Taken from cs349-code/blob/master/x/displaylist.cpp
 /*Repaints a list of displayables*/
 void repaint(list<Displayable*> dList, XInfo& xinfo) {
 	list<Displayable*>::const_iterator start = dList.begin();
@@ -468,7 +465,6 @@ int collision(list<Circle*> circleList, int a, int b, XInfo& xinfo) {
 }
 
 
-//Taken from dvogel/cs349-code/blob/master/x/animation.cpp
 unsigned long now() {
 	timeval tv;
 	gettimeofday(&tv, NULL);
